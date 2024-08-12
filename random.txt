@@ -1,3 +1,4 @@
+Hello
 This was a perfect tutorial. Seriously, this is how you do it.
 I know zero Rust.
 But I mostly understood the original code well enough based on knowing things like Powershell and Bash.
@@ -7,7 +8,6 @@ But the real key to what makes this a phenomenal tutorial is that it is simple e
 I could easily see myself using this tool as part of a larger program I want to build.
 All I'd need to add is whatever it takes to decompress/decode the files I need to read and then a bit of code to manipulate those files and their contents.
 Libraries exist to handle the former, I just have to find them and port them to Rust.
-The latter is probably fairly trivial.
+The latter is probably fairly trivial hello.
 Bottom line is that you showed me a beginner project that actually leads to something.
 And that is how you motivate people to learn.
-

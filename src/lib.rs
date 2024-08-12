@@ -3,8 +3,10 @@ use std::error::Error;
 use std::env;
 
 pub fn run(config : Config) -> Result<() , Box< dyn Error>> {
+    let file_name = config.file_name.clone();
     let content = fs::read_to_string(config.file_name)?;
-    println!("reading query {} " ,config.query );
+    println!("Searching query {} " ,config.query );
+    println!("In file {} " , file_name);
 
     let res = if config.case_sensitive {
         search(&config.query, &content)
@@ -31,8 +33,7 @@ impl Config {
            let query = args[1].clone();
            let file_name = args[2].clone(); 
            let case_sensitive = env::var("CASE_INSENSITIVE").is_err();
-           println!("{case_sensitive}");
-        Ok(Config {query , file_name , case_sensitive})
+           Ok(Config {query , file_name , case_sensitive})
     }
 }
 
